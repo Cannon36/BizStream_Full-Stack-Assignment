@@ -82,24 +82,56 @@ h1 {
     font-family: Arial;
     font-size: 38px;
 }
+ .pb-3 div {
+    padding: 5px 5px 5px 5px;
+}
 div label {
     font-family: Arial;
     font-size: 16px;
+    font-weight: bold;
     display: block;
+    width: 50%;
 }
 div input {
     font-family: Arial;
     font-size: 16px;
-    border: 2px solid #0087AA;
+    border: 1px solid #0087AA;
     background: #FFFFFF;
     display: block;
     border-radius: 3px;
+    width: 50%;
+    height: 36px;
 }
 div textarea {
     font-family: Arial;
     font-size: 16px;
-    border: 2px solid #0087AA;
+    border: 1px solid #0087AA;
     background: #FFFFFF;
     display: block;
     border-radius: 3px;
+    width: 50%;
+}
+div input[type=submit] {
+    font-family: Arial;
+    font-size: 16px;
+    height: 36px;
+    color: #FFFFFF;
+    background: #0087AA;
+    transition-duration: 0.4s
+}
+    div input[type=submit]:hover {
+        font-family: Arial;
+        font-size: 16px;
+        height: 36px;
+        color: #FFFFFF;
+        background: #1997B7;
+        transition-duration: 0.4s
+    }
+.success {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: forestgreen;
+    display: block;
+    width: 50%;
 }

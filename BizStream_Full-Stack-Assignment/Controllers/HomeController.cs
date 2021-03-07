@@ -22,7 +22,7 @@ namespace BizStream_Full_Stack_Assignment.Controllers
         [HttpGet]
         public ViewResult Index()
         {
-            Debug.WriteLine("My debug string here");
+            
             return View();
         }
 
@@ -37,8 +37,8 @@ namespace BizStream_Full_Stack_Assignment.Controllers
                 Debug.WriteLine(model.Message);
 
                 WriteOutFile(model.FirstName, model.LastName, model.Email, model.Message);
-
-
+                Debug.WriteLine("My debug Success");
+                this.TempData["success"] = "Submitted Successfully!";
                 return RedirectToAction("Index");
             }
             else
