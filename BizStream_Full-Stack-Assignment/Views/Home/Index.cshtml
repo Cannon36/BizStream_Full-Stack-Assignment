@@ -10,18 +10,22 @@
 <form asp-action="Index" asp-controller="Home" method="post">
 	<div>
 		<label asp-for="FirstName">First Name</label>
+		@Html.ValidationMessageFor(m => m.FirstName,"",new { @class = "text-danger" })
 		<input type="text" asp-for="FirstName" />
 	</div>
 	<div>
 		<label asp-for="LastName">Last Name</label>
+		@Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
 		<input type="text" asp-for="LastName" />
 	</div>
 	<div>
 		<label asp-for="Email">Email</label>
+		@Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
 		<input type="text" asp-for="Email" />
 	</div>
 	<div>
 		<label asp-for="Message">Message</label>
+		@Html.ValidationMessageFor(m => m.Message, "", new { @class = "text-danger" })
 		<textarea asp-for="Message"></textarea>
 	</div>
 	<input type="submit" value="SUBMIT" />
