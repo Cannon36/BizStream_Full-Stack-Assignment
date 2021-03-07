@@ -1,29 +1,6 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
-
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -88,7 +65,8 @@ h1 {
 div label {
     font-family: Arial;
     font-size: 16px;
-    font-weight: normal;
+    /*font-weight: normal;??*/
+    font-weight: bold;
     display: block;
     width: 50%;
 }
@@ -110,24 +88,31 @@ div textarea {
     display: block;
     border-radius: 3px;
     width: 50%;
+    
 }
 div input[type=submit] {
+    position: relative;
+    top: 36px;
     font-family: Arial;
     font-size: 16px;
     height: 36px;
     color: #FFFFFF;
     background: #0087AA;
-    transition-duration: 0.4s
+    transition-duration: 0.4s;
 }
-    div input[type=submit]:hover {
+   div input[type=submit]:hover {
         font-family: Arial;
         font-size: 16px;
         height: 36px;
         color: #FFFFFF;
         background: #1997B7;
-        transition-duration: 0.4s
+        transition-duration: 0.4s;
     }
+
+
 .success {
+    top: 36px;
+    position: relative;
     font-family: Arial;
     font-size: 16px;
     font-weight: bold;
